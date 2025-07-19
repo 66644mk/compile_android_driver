@@ -373,15 +373,15 @@ void __exit rwProcMem_dev_exit(void) {
 //Hook:__cfi_check_fn
 unsigned char* __check_(unsigned char* result, void *ptr, void *diag)
 {
-	printk_debug(KERN_EMERG "my__cfi_check_fn!!!\n");
-	return result;
+	//printk_debug(KERN_EMERG "my__cfi_check_fn!!!\n");
+	//return result;
 }
 
 //Hook:__cfi_check_fail
 unsigned char * __check_fail_(unsigned char *result)
 {
-	printk_debug(KERN_EMERG "my__cfi_check_fail!!!\n");
-	return result;
+	//printk_debug(KERN_EMERG "my__cfi_check_fail!!!\n");
+	//return result;
 }
 #endif
 
